@@ -8,8 +8,47 @@
     .LandingContainer .BannerContainer {
         background-color: var(--primary-color);
     }
-.LandingContainer h1 {
-    font-size: var(--large-text);
+.LandingContainer > h1 {
+    padding: 1em;
     font-weight: 700;
     color: var(--white-color);
 }
+.InfographicContainer {
+    gap: 1em;
+    width: clamp(100px, 80%, 800px);
+    padding: 1em;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+    .InfographicContainer h1 {
+        padding: 0.5em;
+    }
+
+.UpdatesContainer {
+    width: 100%;
+    padding: 4em 0 4em 0;
+    background-color: var(--white-color);
+    background-image: url('/applogo-socialfunc.png');
+}
+    .UpdatesContainer .UpdatesContent {
+        z-index: 99;
+        gap: 1em;
+        width: clamp(100px, 80%, 700px);
+        margin-bottom: 0.1em;
+        padding: 2em;
+        background-color: var(--white-color);
+        box-shadow: 0 0 0.5em var(--dark-color);
+        transition: all 0.2s;
+    }
+    .UpdatesContainer .UpdatesContent:hover {
+        padding-top: 4em;
+        padding-bottom: 4em;
+        transition: all 0.2s;
+    }
+        .UpdatesContainer .UpdatesContent h1 {
+            align-self: flex-start;
+        }
+        .UpdatesContainer .UpdatesContent h1:last-child {
+            font-size: var(--small-text);
+            color: var(--grey-color);
+        }

@@ -4,27 +4,32 @@ import React, { useState } from 'react';
 
 export default function Navbar() {
 
-    const [navBarOpen, setNavBarOpen] = useState('');
-    const toggleNav = () => {
-        if(navBarOpen === ''){
-            setNavBarOpen('active')
-            return;
+    const [navBarOpen, setNavBarOpen] = useState('CollapseHeightClosed')
+    const toggleNavBar = () => {
+        if(navBarOpen === 'CollapseHeightClosed'){
+            setNavBarOpen('CollapseHeightOpen')
+            document.body.style.overflow = "hidden"
+            return
         }
-        setNavBarOpen('');
+        setNavBarOpen('CollapseHeightClosed')
+        document.body.style.overflow = "scroll"
     }
-    
+
     return (
         <>
             <div className={'FlexCol ' + styles.MobileNavContainer}>
-                <img onClick={toggleNav} src='/icons/icon-bars.svg'></img>
+                <img onClick={toggleNavBar} src='/icons/icon-bars.svg'></img>
             </div>
-            <div onClick={toggleNav} className={'FlexCol ' + styles.MobileNavContent}>
+            <div onClick={toggleNavBar} className={`FlexCol ${navBarOpen} ` + styles.MobileNavContent}>
                 <img src='/icons/icon-x.svg'></img>
-                <Link href=''>
+                <Link href='/'>
                     Home
                 </Link>
-                <Link href=''>
+                <Link href='/games'>
                     Games
+                </Link>
+                <Link href='/play'>
+                    Play
                 </Link>
                 <Link href=''>
                     Support
@@ -35,6 +40,23 @@ export default function Navbar() {
             </div>
             <div className={'FlexRow ' + styles.BannerContainer}>
                 <img src='/appbanner-socialfunc.png'/>
+            </div>
+            <div className={`FlexRow ` + styles.DesktopNavContainer}>
+                <Link href='/'>
+                    Home
+                </Link>
+                <Link href='/games'>
+                    Games
+                </Link>
+                <Link href='/play'>
+                    Play
+                </Link>
+                <Link href=''>
+                    Support
+                </Link>
+                <Link href=''>
+                    About
+                </Link>
             </div>
         </>
     )

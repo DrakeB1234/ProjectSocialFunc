@@ -22,12 +22,12 @@
     /* nav content */
     .MobileNavContent {
         position: absolute;
-        top: -100vh;
         left: 0;
         right: 0;
-        gap: 2em;
         height: 100vh;
         background-color: var(--dark-color);
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
     /* toggle */
     .MobileNavContent.active {
@@ -35,11 +35,39 @@
         background-color: var(--primary-color);
     }
         .MobileNavContent a {
-            font-size: 3rem;
+            width: 100%;
+            padding: 0.5em;
+            text-align: center;
+            font-size: var(--large-text);
             color: var(--primary-color);
         }
         .MobileNavContent img {
             position: relative;
             left: 40%;
             top: 1em;
+            cursor: pointer;
         }
+/* desktop nav */
+.DesktopNavContainer {
+    gap: 1em;
+    padding: 0.5em;
+    background-color: var(--primary-color);
+}
+    .DesktopNavContainer a {
+        padding: 0.5em 2em 0.5em 2em;
+        border-radius: 10px;
+        font-size: var(--small-text);
+        font-weight: 700;
+        color: var(--primary-color);
+        background-color: var(--dark-color);
+    }
+@media only screen and (max-width: 1000px) {
+    .DesktopNavContainer {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .MobileNavContainer {
+        display: none;
+    }
+}

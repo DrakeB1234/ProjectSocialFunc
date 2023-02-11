@@ -1,0 +1,23 @@
+.GamesContainer {
+    padding: 2em 0 2em 0;
+}
+    .GamesContainer > h1 {
+        padding: 1em 0 1em 0;
+    }
+    .GamesContent {
+        width: 100%;
+        background-color: var(--white-color);
+    }
+        .GamesRow {
+            gap: 1em;
+            justify-content: flex-start;
+            width: 90%;
+            padding: 2em 1em 2em 1em;
+        }
+        .GamesRow:nth-child(n + 2) {
+            border-top: 1px solid var(--dark-color);
+        }
+            .GamesRow div {
+                gap: 1em;
+                align-items: flex-start;
+            }

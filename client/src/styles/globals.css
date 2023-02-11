@@ -59,11 +59,13 @@ a {
 	--primary-color: #FED261;
 	--primaryli-color: #FFE5A4;
 	--dark-color: #413D34;
-	--white-color: #E6E6E6;
+	--grey-color: #8a8577;
+	--white-color: #fcfcfc;
 
 	--small-text: 1.2rem;
-	--med-text: 1.5rem;
-	--large-text: 1.8rem;
+	--med-text: 1.6rem;
+	--large-text: 2.2rem;
+	--xlarge-text: 2.8rem;
 }
 
 /* DOM tags */
@@ -77,7 +79,7 @@ a {
 }
 main {
 	min-height: 100vh;
-    width: clamp(200px, 100%, 1400px);
+    width: clamp(200px, 100%, 1450px);
     background-color: var(--dark-color);
 }
 
@@ -134,6 +136,16 @@ form {
 		cursor: pointer;
 	}
 
+/* global collaspable */
+.CollapseHeightOpen {
+	top: 0;
+	transition: all 0.5s ease-in-out;
+}
+.CollapseHeightClosed {
+	top: -100vh;
+	transition: all 0.5s;
+}
+
 /* global text */
 h1.LineText {
 	display: flex;
@@ -146,3 +158,33 @@ h1.LineText {
 		flex: 1;
 		color: var(--white-color);
 	}
+.MainHeadText {
+	font-weight: 700;
+	font-size: var(--xlarge-text);
+}
+.HeadText {
+	font-weight: 700;
+	font-size: var(--large-text);
+}
+.SubHeadText {
+	font-weight: 500;
+	font-size: var(--med-text);
+	overflow: hidden;
+	overflow-wrap: break-word;
+}
+
+.BoldText {
+	font-weight: 700;
+}
+.GreyText {
+	color: var(--grey-color);
+}
+.BlackText {
+	color: var(--dark-color);
+}
+.YellowText {
+	color: var(--primary-color);
+}
+.WhiteText {
+	color: var(--white-color);
+}

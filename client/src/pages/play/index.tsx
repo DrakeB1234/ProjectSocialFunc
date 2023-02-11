@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import styles from '../../styles/play.module.css';
 import Navbar from '../../pages/components/navbar/navbar';
 
