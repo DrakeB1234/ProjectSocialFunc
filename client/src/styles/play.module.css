@@ -1,0 +1,10 @@
+/* HomeContainer */
+.HomeContainer img {
+    padding: 0.5em;
+    width: clamp(200px, 60%, 300px);
+    object-fit: cover;
+    background-color: var(--primary-color);
+}
+    .HomeContainer .BannerContainer {
+        background-color: var(--primary-color);
+    }

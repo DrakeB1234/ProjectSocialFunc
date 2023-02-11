@@ -1,0 +1,45 @@
+/* Banner */
+.BannerContainer {
+    background-color: var(--primary-color);
+}
+    .BannerContainer img {
+        width: clamp(200px, 60%, 250px);
+        object-fit: cover;
+        background-color: var(--primary-color);
+    }
+/* mobile nav */
+.MobileNavContainer {
+    position: absolute;
+    width: clamp(200px, 100%, 1400px);
+}
+.MobileNavContainer img {
+    align-self: flex-end;
+    padding-top: 1em;
+    padding-right: 1em;
+    cursor: pointer;
+    width: 40px;
+}
+    /* nav content */
+    .MobileNavContent {
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        right: 0;
+        gap: 2em;
+        height: 100vh;
+        background-color: var(--dark-color);
+    }
+    /* toggle */
+    .MobileNavContent.active {
+        top: 0;
+        background-color: var(--primary-color);
+    }
+        .MobileNavContent a {
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+        .MobileNavContent img {
+            position: relative;
+            left: 40%;
+            top: 1em;
+        }

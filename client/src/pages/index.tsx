@@ -1,14 +1,23 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
+import styles from '../styles/landing.module.css';
+import Navbar from '../pages/components/navbar/navbar';
 
-export default function Home() {
+export default function Landing() {
   return (
     <>
       <Head>
-        <title>SocialFunc | Homepage</title>
+        <title>SocialFunc | Social Games</title>
+        <link rel='stylesheet' href='index.css' />
       </Head>
       <main>
-        <img src='/appbanner-socialfunc.png' width='900px'/>
-        <h1>SocialFunc Homepage</h1>
+        <Navbar />
+        <div className={'FlexCol ' + styles.LandingContainer}>
+            <h1>WELCOME TO SOCIALFUNC</h1>
+            <Link href='/play'>
+                <button>asdf</button>
+            </Link>
+        </div>
       </main>
     </>
   )

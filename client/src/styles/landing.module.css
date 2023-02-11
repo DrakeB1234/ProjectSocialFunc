@@ -1,0 +1,15 @@
+/* LandingContainer */
+.LandingContainer img {
+    padding: 0.5em;
+    width: clamp(200px, 60%, 300px);
+    object-fit: cover;
+    background-color: var(--primary-color);
+}
+    .LandingContainer .BannerContainer {
+        background-color: var(--primary-color);
+    }
+.LandingContainer h1 {
+    font-size: var(--large-text);
+    font-weight: 700;
+    color: var(--white-color);
+}

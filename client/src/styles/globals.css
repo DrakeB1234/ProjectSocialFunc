@@ -49,3 +49,100 @@ table {
 html {
 	font-family: 'Roboto', sans-serif;
 }
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* root */
+:root {
+	--primary-color: #FED261;
+	--primaryli-color: #FFE5A4;
+	--dark-color: #413D34;
+	--white-color: #E6E6E6;
+
+	--small-text: 1.2rem;
+	--med-text: 1.5rem;
+	--large-text: 1.8rem;
+}
+
+/* DOM tags */
+#__next {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	background-color: var(--primaryli-color);
+	background-image: url('/applogo-socialfunc.png');
+}
+main {
+	min-height: 100vh;
+    width: clamp(200px, 100%, 1400px);
+    background-color: var(--dark-color);
+}
+
+/* global flex */
+.FlexCol {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.FlexRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* global form */
+form {
+	display: flex;
+	flex-direction: column;
+	width: clamp(200px, 75%, 350px);
+	padding: 1em;
+	gap: 1em;
+}
+	form h1 {
+		text-align: center;
+		color: var(--white-color);
+		font-size: var(--med-text);
+		font-weight: 700;
+	}
+	form label {
+		color: var(--white-color);
+		font-size: var(--med-text);
+		font-weight: 700;
+	}
+	form input[type='text'] {
+		padding: 0.6em;
+		font-size: var(--med-text);
+		border: 0;
+		border-radius: 8px;
+		font-weight: 700;
+		color: var(--dark-color);
+		background-color: var(--primaryli-color);
+	}
+	form button {
+		margin: 1em 0 1em 0;
+		padding: 0.6em;
+		width: 100%;
+		font-size: var(--med-text);
+		border: 0;
+		border-radius: 8px;
+		font-weight: 700;
+		background-color: var(--primary-color);
+		color: var(--dark-color);
+		cursor: pointer;
+	}
+
+/* global text */
+h1.LineText {
+	display: flex;
+	flex-direction: row;
+}
+	h1.LineText > text {
+		margin: 0 0.5em 0 0.5em;
+	}
+	h1.LineText hr {
+		flex: 1;
+		color: var(--white-color);
+	}
