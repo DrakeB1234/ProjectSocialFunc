@@ -5,19 +5,21 @@
         padding: 1em 0 1em 0;
     }
     .GamesContent {
-        width: 100%;
-        background-color: var(--white-color);
+        gap: 1em;
+        width: 96%;
+        flex-wrap: wrap;
     }
-        .GamesRow {
+        .GamesItem {
             gap: 1em;
+            width: clamp(200px, 100%, 500px);
+            padding-bottom: 2em;
             justify-content: flex-start;
-            width: 90%;
-            padding: 2em 1em 2em 1em;
+            background-color: var(--white-color);
         }
-        .GamesRow:nth-child(n + 2) {
-            border-top: 1px solid var(--dark-color);
-        }
-            .GamesRow div {
-                gap: 1em;
-                align-items: flex-start;
+            .GamesItem img {
+                width: 100%;
+            }
+            .GamesItem h1 {
+                width: 96%;
+                text-align: left;
             }

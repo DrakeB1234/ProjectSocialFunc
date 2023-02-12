@@ -13,29 +13,18 @@ export default function Games() {
       <main>
         <Navbar />
         <div className={'FlexCol ' + styles.GamesContainer}>
-          <h1 className='MainHeadText WhiteText'>Select Game</h1>
-          <div className={'FlexCol ' + styles.GamesContent}>
+          <h1></h1>
+          <div className={'FlexRow ' + styles.GamesContent}>
 
-            <div className={'FlexRow ' + styles.GamesRow}>
-              <img src='/icons/icon-bars.svg' />
-              <div className='FlexCol'>
-                <h1 className='MainHeadText BlackText'>Game Title</h1>
-                <h1 className='SubHeadText GreyText'>Game Description</h1>
-              </div>
+            <div className={'FlexCol ' + styles.GamesItem}>
+              <img src='/gamebanner-socialfunc.png' />
+              <h1 className='SubHeadText BlackText BoldText'>How Many?</h1>
+              <h1 className='GreyText'>A game about how many things are a thing!</h1>
             </div>
-            <div className={'FlexRow ' + styles.GamesRow}>
-              <img src='/icons/icon-bars.svg' />
-              <div className='FlexCol'>
-                <h1 className='MainHeadText BlackText'>Game Title</h1>
-                <h1 className='SubHeadText GreyText'>Game Description</h1>
-              </div>
-            </div>
-            <div className={'FlexRow ' + styles.GamesRow}>
-              <img src='/icons/icon-bars.svg' />
-              <div className='FlexCol'>
-                <h1 className='MainHeadText BlackText'>Game Title</h1>
-                <h1 className='SubHeadText GreyText'>Game Description</h1>
-              </div>
+            <div className={'FlexCol ' + styles.GamesItem}>
+              <img src='/gamebanner-socialfunc.png' />
+              <h1 className='SubHeadText BlackText BoldText'>How Many?</h1>
+              <h1 className='GreyText'>A game about how many things are a thing!</h1>
             </div>
             
           </div>

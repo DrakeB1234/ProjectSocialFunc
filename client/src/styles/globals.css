@@ -57,14 +57,15 @@ a {
 /* root */
 :root {
 	--primary-color: #FED261;
+	--primarymed-color: #ddab76;
 	--primaryli-color: #FFE5A4;
 	--dark-color: #413D34;
-	--grey-color: #8a8577;
+	--grey-color: #6f6f6f;
 	--white-color: #fcfcfc;
 
-	--small-text: 1.2rem;
-	--med-text: 1.6rem;
-	--large-text: 2.2rem;
+	--small-text: 1rem;
+	--med-text: 1.3rem;
+	--large-text: 1.8rem;
 	--xlarge-text: 2.8rem;
 }
 
@@ -167,7 +168,7 @@ h1.LineText {
 	font-size: var(--large-text);
 }
 .SubHeadText {
-	font-weight: 500;
+	font-weight: 400;
 	font-size: var(--med-text);
 	overflow: hidden;
 	overflow-wrap: break-word;

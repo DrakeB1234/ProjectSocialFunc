@@ -9,19 +9,19 @@
         background-color: var(--primary-color);
     }
 .LandingContainer > h1 {
-    padding: 1em;
+    padding: 1.5em;
     font-weight: 700;
     color: var(--white-color);
 }
 .InfographicContainer {
     gap: 1em;
-    width: clamp(100px, 80%, 800px);
-    padding: 1em;
-    border-radius: 20px;
-    background-color: var(--primary-color);
+    padding: 2em 0 2em 0;
+    width: 80%;
+    background-color: var(--primarymed-color);
 }
-    .InfographicContainer h1 {
-        padding: 0.5em;
+    .InfographicContent {
+        gap: 1em;
+        width: clamp(100px, 80%, 800px);
     }
 
 .UpdatesContainer {

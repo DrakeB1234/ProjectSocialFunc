@@ -3,21 +3,20 @@
     background-color: var(--primary-color);
 }
     .BannerContainer img {
-        width: clamp(200px, 60%, 250px);
+        width: clamp(180px, 50%, 250px);
         object-fit: cover;
         background-color: var(--primary-color);
     }
 /* mobile nav */
 .MobileNavContainer {
-    position: absolute;
-    width: clamp(200px, 100%, 1400px);
+    justify-content: center;
+    align-items: flex-end;
+    background-color: var(--primary-color);
 }
 .MobileNavContainer img {
-    align-self: flex-end;
-    padding-top: 1em;
-    padding-right: 1em;
+    padding: 1em;
+    width: 25px;
     cursor: pointer;
-    width: 40px;
 }
     /* nav content */
     .MobileNavContent {
@@ -45,6 +44,7 @@
             position: relative;
             left: 40%;
             top: 1em;
+            width: 25px;
             cursor: pointer;
         }
 /* desktop nav */
