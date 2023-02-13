@@ -57,10 +57,10 @@ a {
 /* root */
 :root {
 	--primary-color: #FED261;
-	--primarymed-color: #ddab76;
 	--primaryli-color: #FFE5A4;
 	--dark-color: #413D34;
 	--grey-color: #6f6f6f;
+	--greyli-color: #a3a3a3;
 	--white-color: #fcfcfc;
 
 	--small-text: 1rem;

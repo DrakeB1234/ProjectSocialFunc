@@ -26,6 +26,11 @@ export default function Games() {
               <h1 className='SubHeadText BlackText BoldText'>How Many?</h1>
               <h1 className='GreyText'>A game about how many things are a thing!</h1>
             </div>
+            <div className={'FlexCol ' + styles.GamesItem}>
+              <img src='/gamebanner-socialfunc.png' />
+              <h1 className='SubHeadText BlackText BoldText'>How Many?</h1>
+              <h1 className='GreyText'>A game about how many things are a thing!</h1>
+            </div>
             
           </div>
         </div>

@@ -34,6 +34,9 @@ export default function Navbar() {
                 <Link href=''>
                     Support
                 </Link>
+                <Link href='/updates'>
+                    Updates
+                </Link>
                 <Link href=''>
                     About
                 </Link>
@@ -53,6 +56,9 @@ export default function Navbar() {
                 </Link>
                 <Link href=''>
                     Support
+                </Link>
+                <Link href='/updates'>
+                    Updates
                 </Link>
                 <Link href=''>
                     About

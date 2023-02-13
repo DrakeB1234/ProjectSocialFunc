@@ -27,11 +27,7 @@
         background-color: var(--dark-color);
         overflow-x: hidden;
         overflow-y: scroll;
-    }
-    /* toggle */
-    .MobileNavContent.active {
-        top: 0;
-        background-color: var(--primary-color);
+        z-index: 99;
     }
         .MobileNavContent a {
             width: 100%;
@@ -45,6 +41,8 @@
             left: 40%;
             top: 1em;
             width: 25px;
+            padding: 0.5em;
+            margin-bottom: 1em;
             cursor: pointer;
         }
 /* desktop nav */

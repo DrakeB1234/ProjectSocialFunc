@@ -15,6 +15,21 @@
             padding-bottom: 2em;
             justify-content: flex-start;
             background-color: var(--white-color);
+            transition: padding 0.3s;
+            cursor: pointer;
+        }
+        .GamesItem:hover {
+            background-color: var(--greyli-color);
+            padding-left: 1.5em;
+            transition: all 0.3s;
+        }
+        .GamesItem:hover img {
+            filter: brightness(60%);
+            transition: all 0.3s;
+        }
+        .GamesItem:hover h1 {
+            color: var(--white-color);
+            transition: all 0.3s;   
         }
             .GamesItem img {
                 width: 100%;

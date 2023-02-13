@@ -7,25 +7,22 @@
 }
     .FooterContent {
         flex-wrap: wrap;
-        gap: 2em 0;
-        justify-content: space-around;
+        gap: 2em;
         width: 100%;
-        padding: 1em;
         color: var(--white-color);
         background-color: var(--grey-color);
         text-align: center;
     }
-        .FooterContent h1:first-child {
-            font-size: var(--large-text);
-            width: 100%;
-            margin-bottom: 0.5em;
-            border-bottom: 1px solid var(--white-color);
+        .FooterContent div {
+            width: clamp(100px, 100%, 250px);
         }
-        .FooterContent h1:nth-child(n + 2) {
-            font-size: var(--small-text);
+        /* header text */
+        .FooterContent h1:first-child {
             margin-bottom: 0.5em;
         }
         .FooterContent a {
             font-size: var(--med-text);
-            margin-bottom: 0.5em;
         }
+.FooterContainer > div:last-child {
+    margin-top: 4em;
+}

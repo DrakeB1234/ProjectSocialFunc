@@ -1,30 +1,3 @@
-/* LandingContainer */
-.LandingContainer > img {
-    padding: 0.5em;
-    width: clamp(200px, 60%, 300px);
-    object-fit: cover;
-    background-color: var(--primary-color);
-}
-    .LandingContainer .BannerContainer {
-        background-color: var(--primary-color);
-    }
-.LandingContainer > h1 {
-    padding: 1.5em;
-    font-weight: 700;
-    color: var(--white-color);
-}
-   
-    
-.InfographicContainer {
-    gap: 1em;
-    padding: 1.5em;
-    width: clamp(100px, 80%, 800px);
-    background-color: var(--primary-color);
-}
-    .InfographicContainer h1 {
-        padding: 0.5em;
-    }
-
 .UpdatesContainer {
     width: 100%;
     padding: 4em 0 4em 0;
@@ -32,7 +5,7 @@
     background-image: url('/applogo-socialfunc.png');
 }
     .UpdatesContainer .UpdatesContent {
-        z-index: 99;
+        z-index: 2;
         gap: 1em;
         width: clamp(100px, 80%, 700px);
         margin-bottom: 0.1em;
