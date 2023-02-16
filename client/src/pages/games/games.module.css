@@ -24,7 +24,7 @@
             transition: all 0.3s;
         }
         .GamesItem:hover img {
-            filter: brightness(60%);
+            filter: brightness(60%) opacity(80%);
             transition: all 0.3s;
         }
         .GamesItem:hover h1 {

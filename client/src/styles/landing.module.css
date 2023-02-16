@@ -9,11 +9,43 @@
         background-color: var(--primary-color);
     }
 .LandingContainer > h1 {
-    padding: 1.5em;
+    padding: 1em;
     font-weight: 700;
     color: var(--white-color);
 }
-   
+
+/* game container */
+.GameContainer {
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1px;
+    height: 18em;
+    width: clamp(100px, 100%, 800px);
+    margin-bottom: 3em;
+}
+    .GameContainer a {
+        flex: 1;
+        height: 15em;
+        cursor: pointer;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+        .GameContainer a:hover {
+            margin-bottom: 1.5em;
+            border-bottom: 0.5rem solid var(--primary-color);
+            transition: all 0.3s;
+        }
+        .GameContainer a img {
+            height: 100%;
+            filter: brightness(20%) opacity(70%);
+        }
+            .GameContainer a h1 {
+                position: relative;
+                bottom: 50%;
+            }
+
+
+
     
 .InfographicContainer {
     gap: 1em;
@@ -32,7 +64,7 @@
     background-image: url('/applogo-socialfunc.png');
 }
     .UpdatesContainer .UpdatesContent {
-        z-index: 99;
+        z-index: 2;
         gap: 1em;
         width: clamp(100px, 80%, 700px);
         margin-bottom: 0.1em;

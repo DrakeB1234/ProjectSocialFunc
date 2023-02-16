@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../../styles/play.module.css';
+import styles from '../play/play.module.css';
 import Navbar from '../../pages/components/navbar/navbar';
 
 export default function Gamepage() {

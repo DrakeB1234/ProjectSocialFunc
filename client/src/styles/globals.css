@@ -63,6 +63,8 @@ a {
 	--greyli-color: #a3a3a3;
 	--white-color: #fcfcfc;
 
+	--blur-color: rgba(65, 61, 52, 80%);
+
 	--small-text: 1rem;
 	--med-text: 1.3rem;
 	--large-text: 1.8rem;

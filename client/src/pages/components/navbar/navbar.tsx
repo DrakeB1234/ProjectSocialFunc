@@ -8,11 +8,9 @@ export default function Navbar() {
     const toggleNavBar = () => {
         if(navBarOpen === 'CollapseHeightClosed'){
             setNavBarOpen('CollapseHeightOpen')
-            document.body.style.overflow = "hidden"
             return
         }
         setNavBarOpen('CollapseHeightClosed')
-        document.body.style.overflow = "scroll"
     }
 
     return (
@@ -31,9 +29,6 @@ export default function Navbar() {
                 <Link href='/play'>
                     Play
                 </Link>
-                <Link href=''>
-                    Support
-                </Link>
                 <Link href='/updates'>
                     Updates
                 </Link>
@@ -41,9 +36,11 @@ export default function Navbar() {
                     About
                 </Link>
             </div>
+            <Link href='/'>
             <div className={'FlexRow ' + styles.BannerContainer}>
                 <img src='/appbanner-socialfunc.png'/>
             </div>
+            </Link>
             <div className={`FlexRow ` + styles.DesktopNavContainer}>
                 <Link href='/'>
                     Home
@@ -53,9 +50,6 @@ export default function Navbar() {
                 </Link>
                 <Link href='/play'>
                     Play
-                </Link>
-                <Link href=''>
-                    Support
                 </Link>
                 <Link href='/updates'>
                     Updates

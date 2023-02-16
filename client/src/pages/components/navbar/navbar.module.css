@@ -3,7 +3,7 @@
     background-color: var(--primary-color);
 }
     .BannerContainer img {
-        width: clamp(180px, 50%, 250px);
+        width: clamp(160px, 35%, 250px);
         object-fit: cover;
         background-color: var(--primary-color);
     }
@@ -20,7 +20,7 @@
 }
     /* nav content */
     .MobileNavContent {
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
         height: 100vh;
