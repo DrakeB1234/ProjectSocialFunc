@@ -7,7 +7,7 @@ export default function Popup(props: any) {
         <>
             <div className={'FlexCol ' + styles.PopUpOuter}>
                 <div className={'FlexCol ' + styles.PopUpInner}>
-                    <img onClick={() => {props.setTrigger(false)}} src='/icons/icon-x.svg' />
+                    <img onClick={() => {props.setTrigger(false)}} src='/icons/icon-black-x.svg' />
                     { props.children }
                 </div>
             </div>

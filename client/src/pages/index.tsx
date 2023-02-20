@@ -14,6 +14,7 @@ export default function Landing() {
     <>
     <Popup trigger={popUp} setTrigger={setPopUp}>
       <div className='FlexCol'>
+        <img src='/appbanner-socialfunc.png'></img>
         <h1 className='HeadText BoldText'>Welcome to SocialFunc!</h1>
         <h1 className='SubHeadText GreyText'>This site is currently in development, but feel welcome to look around!</h1>
         <h1 className='SubHeadText'>If you would like to help in development, please contact us with any of the contact methods in the about section!</h1>
@@ -64,7 +65,7 @@ export default function Landing() {
               <h1>Start of projects repoistory and first website design!Start of projects repoistory and first website design!Start of projects repoistory and first website design!</h1>
             </div>
             <div className={'FlexCol ' + styles.UpdatesContent}>
-              <Link href='/updates'><h1 className='SubHeadText BoldText'>See More</h1></Link>
+              <Link href='/updates' className='FlexRow'><h1 className='SubHeadText BoldText'>See More</h1></Link>
             </div>
           </div>
           <h1 className='HeadText'>Thank you!</h1>

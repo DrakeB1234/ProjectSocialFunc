@@ -15,9 +15,10 @@
     overflow-y: scroll;
     animation: popUp 0.3s ease;
 }
-    .PopUpInner img:first-child {
+    .PopUpInner > img:first-child {
         width: 40px;
         cursor: pointer;
+        padding: 1em;
     }
     .PopUpInner h1 {
         overflow: visible;

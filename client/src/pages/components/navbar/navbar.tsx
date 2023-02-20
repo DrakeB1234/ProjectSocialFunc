@@ -32,7 +32,7 @@ export default function Navbar() {
                 <Link href='/updates'>
                     Updates
                 </Link>
-                <Link href=''>
+                <Link href='/about'>
                     About
                 </Link>
             </div>
@@ -54,7 +54,7 @@ export default function Navbar() {
                 <Link href='/updates'>
                     Updates
                 </Link>
-                <Link href=''>
+                <Link href='/about'>
                     About
                 </Link>
             </div>

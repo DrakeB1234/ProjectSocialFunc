@@ -1,0 +1,56 @@
+.GameContainer {
+    gap: 4em;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+    .GameContainer img {
+        align-self: center;
+        width: 90%;
+        box-shadow: 0 0 1em var(--grey-color);
+    }
+    /* info about game */
+    .GameContainer .GameInfo {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1em 2em;
+        width: 100%;
+    }
+        .GameContainer .GameInfo h1 {
+            padding: 0.5em;
+            border-radius: 10px;
+            background-color: var(--white-color);
+            box-shadow: 0 0 0.5em var(--grey-color);
+        }
+        .GameContainer .GameInfo a {
+            margin: 1em auto 0 auto;
+            padding: 0.5em 1em 0.5em 1em;
+            border-radius: 10px;
+            background-color: var(--primary-color);
+            box-shadow: 0 0 0.5em var(--greyli-color);
+        }
+.GameContent {
+    width: 100%;
+    margin-top: 2em;
+    text-align: left;
+}
+    .GameContent h1 {
+        align-self: flex-start;
+    }
+    .GameContent h2 {
+        border-top: 1px solid var(--grey-color);
+        padding: 0.1em;
+        padding: 1em 0 1em 0;
+    }
+    .GameContent ol {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 100%;
+        padding: 2em 0 1em 0;
+        border-top: 1px solid var(--grey-color);
+    }
+        .GameContent li {
+            padding: 0.1em;
+        }

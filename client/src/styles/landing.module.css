@@ -43,9 +43,6 @@
                 position: relative;
                 bottom: 50%;
             }
-
-
-
     
 .InfographicContainer {
     gap: 1em;
@@ -82,6 +79,14 @@
         .UpdatesContainer .UpdatesContent h1 {
             align-self: flex-start;
         }
-        .UpdatesContainer .UpdatesContent h1:last-child {
+        .UpdatesContainer .UpdatesContent a {
+            width: 100%;
+            padding: 1em;
+        }
+            .UpdatesContainer .UpdatesContent a h1 {
+                align-self: center;
+            }
+        .UpdatesContainer .UpdatesContent:last-child {
             color: var(--grey-color);
+            padding: 0.5em 2em 0.5em 2em;
         }

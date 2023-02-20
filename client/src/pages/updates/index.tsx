@@ -4,7 +4,8 @@ import styles from '../updates/updates.module.css';
 import Navbar from '../../pages/components/navbar/navbar';
 import Footer from '../../pages/components/footer/footer';
 
-export default function Updates() {
+export default function Updates() {  
+  
   return (
     <>
       <Head>
