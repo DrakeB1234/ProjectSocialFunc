@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import React, { useState } from 'react'; 
+import React, { useState, useEffect } from 'react'; 
 import styles from '../styles/landing.module.css';
 import Navbar from '../pages/components/navbar/navbar';
 import Footer from '../pages/components/footer/footer';
@@ -9,6 +9,16 @@ import Popup from './components/popup/popup';
 export default function Landing() {
 
   const [ popUp, setPopUp ] = useState(true)
+
+  // var for data from api
+  const [ blogData, setBlogData ] = useState([]);
+
+  useEffect(() => {
+    fetch('api/blogdata')
+      .then(res => { return res.json() })
+      .then(data => setBlogData(data))
+      .catch(err => console.error(`Couldn't fetch data`))
+  }, []);
   
   return (
     <>
@@ -49,21 +59,14 @@ export default function Landing() {
           </div>
           <h1 className='HeadText'>Updates</h1>
           <div className={'FlexCol ' + styles.UpdatesContainer}>
-            <div className={'FlexCol ' + styles.UpdatesContent}>
-              <h1 className='SubHeadText GreyText'>Feburary 22, 2023</h1>
-              <h1 className='HeadText BlackText'>Social Accounts Public <span className='YellowText'>!</span></h1>  
-              <h1>Public announcement of the SocialFunc project was made today on Twitter! Support pages now hook up with the same account to add additional feedback for the developers!</h1>
-            </div>
-            <div className={'FlexCol ' + styles.UpdatesContent}>
-              <h1 className='SubHeadText GreyText'>Feburary 15, 2023</h1>
-              <h1 className='HeadText BlackText'>Application Hosted <span className='YellowText'>!</span></h1>  
-              <h1>The SocialFunc website is now officially available to access anywhere at http://socialfunc.com! The next big step can now be worked on, making this project known to the world with social media.</h1>
-            </div>
-            <div className={'FlexCol ' + styles.UpdatesContent}>
-              <h1 className='SubHeadText GreyText'>Feburary 10, 2023</h1>
-              <h1 className='HeadText BlackText'>Project Start <span className='YellowText'>!</span></h1>  
-              <h1>Start of projects repoistory and first website design!Start of projects repoistory and first website design!Start of projects repoistory and first website design!</h1>
-            </div>
+            {/* get data */}
+            { blogData && blogData.map((e: any) =>
+              <div className={'FlexCol ' + styles.UpdatesContent}>
+                <h1 className='SubHeadText GreyText'>{ e.date }</h1>
+                <h1 className='HeadText BlackText'>{ e.title }</h1>  
+                <h1>{ e.content }</h1>
+              </div>
+            )}
             <div className={'FlexCol ' + styles.UpdatesContent}>
               <Link href='/updates' className='FlexRow'><h1 className='SubHeadText BoldText'>See More</h1></Link>
             </div>

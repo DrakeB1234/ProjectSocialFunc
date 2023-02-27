@@ -6,12 +6,22 @@ const db = new sqlite3.Database('blog.db', sqlite3.OPEN_READWRITE,(err)=>{
     if (err) return console.error(err.message);
 });
 
-// insert
+// // INSERT INTO
 sql = `INSERT INTO blogs (timestamp, title, content) VALUES (?, ?, ?)`
 
-db.run(sql, ['2023-02-10', 'Project Start!', 'Start of projects repository on Github and first website design! Started to design some new art for and testing out logos to use throughout this project. Mainly need to start thinking of a page flow for this site to make it as accessible as possible. One thing at a time though!'], (err)=>{
+db.run(sql, ['2023-02-10', 'Start of Project!', `I have started this projects
+github repoistory and started to work on the basic page flow that I will use for
+SocialFunc! The idea of this project is to create a platform to play interactable
+party games with friends!`], (err)=>{
     if (err) return console.error(err.message);
 })
+
+// // DELETE
+// sql = `DELETE FROM blogs WHERE id = 2`;
+
+// db.run(sql, (err)=>{
+//     if (err) return console.error(err.message);
+// })
 
 // CREATE TABLE
 // sql = `CREATE TABLE blogs (\
@@ -22,7 +32,7 @@ db.run(sql, ['2023-02-10', 'Project Start!', 'Start of projects repository on Gi
 
 // db.run(sql)
 
-// CREATE TABLE
+// DROP TABLE
 // sql = `DROP TABLE blogs`;
 
 // db.run(sql);

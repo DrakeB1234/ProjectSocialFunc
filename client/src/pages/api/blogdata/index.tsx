@@ -18,19 +18,14 @@ export default function BlogData(req: NextApiRequest, res: NextApiResponse){
     });
 
     // select
-    sql = 'SELECT * FROM blogs';
+    sql = 'SELECT *, strftime("%m/%d/%Y", timestamp) as date FROM blogs ORDER BY timestamp DESC';
     db.all(sql, [], (err: any, rows: any)=>{
         if (err) {
             console.error(err.message)
             res.status(500).json('Database Error');
         }
-        rows.forEach((row: any)=>{
-            console.log(row)
-        });
-
-        // end response
-        db.close()
-        res.status(200).json({data: rows})
-    });
+        res.status(200).json(rows)
+    }
+    )
+    db.close();
 }
-
