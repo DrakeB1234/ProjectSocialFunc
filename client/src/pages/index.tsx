@@ -11,7 +11,7 @@ export default function Landing() {
   const [ popUp, setPopUp ] = useState(true)
 
   // var for data from api
-  const [ blogData, setBlogData ] = useState([]);
+  const [ blogData, setBlogData ] = useState<any[]>([]);
 
   useEffect(() => {
     fetch('api/blogdata')
@@ -60,11 +60,11 @@ export default function Landing() {
           <h1 className='HeadText'>Updates</h1>
           <div className={'FlexCol ' + styles.UpdatesContainer}>
             {/* get data */}
-            { blogData && blogData.map((e: any) =>
+            { blogData && blogData.length && blogData.map((e: any) =>
               <div key={e.id} className={'FlexCol ' + styles.UpdatesContent}>
                 <h1 className='SubHeadText GreyText'>{ e.date }</h1>
                 <h1 className='HeadText BlackText'>{ e.title }</h1>  
-                <h1>{ e.content }</h1>
+                <h1 className='GreyText'>{ e.content }</h1>
               </div>
             )}
             <div className={'FlexCol ' + styles.UpdatesContent}>

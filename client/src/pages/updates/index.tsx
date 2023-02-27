@@ -8,7 +8,7 @@ import React, { useState, useEffect } from 'react';
 export default function Updates() {  
 
   // var for data from api
-  const [ blogData, setBlogData ] = useState([]);
+  const [ blogData, setBlogData ] = useState<any[]>([]);
 
   useEffect(() => {
     fetch('api/blogdata')
@@ -26,7 +26,7 @@ export default function Updates() {
         <Navbar />
         <div className='FlexCol'>
           <div className={'FlexCol ' + styles.UpdatesContainer}>
-            { blogData && blogData.map((e: any) =>
+            { blogData && blogData.length && blogData.map((e: any) =>
               <div key={e.id} className={'FlexCol ' + styles.UpdatesContent}>
                 <h1 className='SubHeadText GreyText'>{ e.date }</h1>
                 <h1 className='HeadText BlackText'>{ e.title }</h1>  
