@@ -61,7 +61,7 @@ export default function Landing() {
           <div className={'FlexCol ' + styles.UpdatesContainer}>
             {/* get data */}
             { blogData && blogData.map((e: any) =>
-              <div className={'FlexCol ' + styles.UpdatesContent}>
+              <div key={e.id} className={'FlexCol ' + styles.UpdatesContent}>
                 <h1 className='SubHeadText GreyText'>{ e.date }</h1>
                 <h1 className='HeadText BlackText'>{ e.title }</h1>  
                 <h1>{ e.content }</h1>

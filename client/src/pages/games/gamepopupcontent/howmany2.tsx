@@ -30,7 +30,7 @@ export default function Game() {
                 </ol>
                 <h1 className='HeadText GreyText'>How to Host Game</h1>
                 <h2 className='SubHeadText'>&emsp;In order to play this game, first have one device dedicated
-                to the "display" device <span className='BlackText BoldText'>(this device would not be able to partipate)</span>. Have other players join
+                to the &quot;display&quot; device <span className='BlackText BoldText'>(this device would not be able to partipate)</span>. Have other players join
                 with displayed room code. Once enough players have joined, the host device can select start game.
                 </h2>
             </div>
