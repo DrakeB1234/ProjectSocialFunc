@@ -1,9 +1,0 @@
-/* HomeContainer */
-.HomeContainer {
-    margin-top: 2em;
-    min-height: 60vh;
-}
-    .HomeContainer form input {
-        text-align: center;
-        text-transform: uppercase;
-    }

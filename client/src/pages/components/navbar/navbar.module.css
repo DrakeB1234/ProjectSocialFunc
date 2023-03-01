@@ -1,71 +1,83 @@
-/* Banner */
-.BannerContainer {
-    background-color: var(--primary-color);
-}
-    .BannerContainer img {
-        width: clamp(160px, 35%, 250px);
-        object-fit: cover;
-        background-color: var(--primary-color);
-    }
-/* mobile nav */
-.MobileNavContainer {
-    justify-content: center;
-    align-items: flex-end;
-    background-color: var(--primary-color);
-}
-.MobileNavContainer img {
-    padding: 1em;
-    width: 25px;
-    cursor: pointer;
-}
-    /* nav content */
-    .MobileNavContent {
-        position: fixed;
-        left: 0;
-        right: 0;
-        height: 100vh;
-        background-color: var(--dark-color);
-        overflow-x: hidden;
-        overflow-y: scroll;
-        z-index: 99;
-    }
-        .MobileNavContent a {
-            width: 100%;
-            padding: 0.5em;
-            text-align: center;
-            font-size: var(--large-text);
-            color: var(--primary-color);
-        }
-        .MobileNavContent img {
-            position: relative;
-            left: 40%;
-            top: 1em;
-            width: 25px;
-            padding: 0.5em;
-            margin-bottom: 1em;
-            cursor: pointer;
-        }
-/* desktop nav */
+/* desktop nav style */
 .DesktopNavContainer {
-    gap: 1em;
+    display: none;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
     padding: 0.5em;
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
+    z-index: 99;
 }
-    .DesktopNavContainer a {
-        padding: 0.5em 2em 0.5em 2em;
-        border-radius: 10px;
-        font-size: var(--small-text);
-        font-weight: 700;
-        color: var(--primary-color);
+    .DesktopNavContainer img {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+    }
+    /* link container */
+    .DesktopNavContainer > div {
+        margin-left: auto;
+        margin-right: 1em;
+        gap: 2em;
+    }
+        .DesktopNavContainer a {
+            color: var(--white-color);
+        }
+
+/* mobile nav style */
+.MobileNavContainer {
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0.3em;
+    background-color: var(--dark-color);
+    z-index: 99;
+}
+    .MobileNavContainer a img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    .MobileNavContainer img {
+        height: 30px;
+        width: 30px;
+        margin-left: auto;
+        cursor: pointer;
+    }
+/* mobile nav popup style */
+.MobileNavPopup {
+    position: fixed;
+    inset: 0;
+    overflow-y: scroll;
+    z-index: 99;
+}
+.MobileNavHide {
+    width: 0;
+    transition: all 0.5s ease-in-out;
+}
+.MobileNavShow {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+    .MobileNavPopup div {
+        gap: 2em;
+        height: 100%;
+        padding: 2em;
+        padding-top: 6em;
         background-color: var(--dark-color);
     }
-@media only screen and (max-width: 1000px) {
-    .DesktopNavContainer {
-        display: none;
+    .MobileNavPopup div a {
+        font-size: var(--large-text);
+        color: var(--primary-color);
     }
-}
-@media only screen and (min-width: 1000px) {
+
+/* media queries */
+@media only screen and (min-width: 850px) {
     .MobileNavContainer {
         display: none;
+    }
+    .DesktopNavContainer {
+        display: flex;
     }
 }

@@ -59,135 +59,67 @@ a {
 	--primary-color: #FED261;
 	--primaryli-color: #FFE5A4;
 	--dark-color: #413D34;
-	--grey-color: #6f6f6f;
-	--greyli-color: #a3a3a3;
+	--grey-color: #4f555d;
 	--white-color: #fcfcfc;
-
-	--blur-color: rgba(65, 61, 52, 80%);
 
 	--small-text: 1rem;
 	--med-text: 1.3rem;
 	--large-text: 1.8rem;
-	--xlarge-text: 2.8rem;
+
+	--min-screen-width: 200px;
 }
 
 /* DOM tags */
 #__next {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	min-height: 100vh;
 	background-color: var(--primaryli-color);
 	background-image: url('/applogo-socialfunc.png');
-}
-main {
-	min-height: 100vh;
-    width: clamp(200px, 100%, 1450px);
-    background-color: var(--dark-color);
+	overflow: hidden;
 }
 
-/* global flex */
+main {
+	background-color: var(--dark-color);
+}
+
+/* display flex */
+.FlexRow {
+	display: flex;
+}
+	.FlexRowCenter {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 .FlexCol {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
-.FlexRow {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-/* global form */
-form {
-	display: flex;
-	flex-direction: column;
-	width: clamp(200px, 75%, 350px);
-	padding: 1em;
-	gap: 1em;
-}
-	form h1 {
-		text-align: center;
-		color: var(--white-color);
-		font-size: var(--med-text);
-		font-weight: 700;
-	}
-	form label {
-		color: var(--white-color);
-		font-size: var(--med-text);
-		font-weight: 700;
-	}
-	form input[type='text'] {
-		padding: 0.6em;
-		font-size: var(--med-text);
-		border: 0;
-		border-radius: 8px;
-		font-weight: 700;
-		color: var(--dark-color);
-		background-color: var(--primaryli-color);
-	}
-	form button {
-		margin: 1em 0 1em 0;
-		padding: 0.6em;
-		width: 100%;
-		font-size: var(--med-text);
-		border: 0;
-		border-radius: 8px;
-		font-weight: 700;
-		background-color: var(--primary-color);
-		color: var(--dark-color);
-		cursor: pointer;
+	.FlexColCenter {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
-/* global collaspable */
-.CollapseHeightOpen {
-	top: 0;
-	transition: all 0.5s ease-in-out;
-}
-.CollapseHeightClosed {
-	top: -100vh;
-	transition: all 0.5s;
-}
-
-/* global text */
-h1.LineText {
-	display: flex;
-	flex-direction: row;
-}
-	h1.LineText > text {
-		margin: 0 0.5em 0 0.5em;
-	}
-	h1.LineText hr {
-		flex: 1;
-		color: var(--white-color);
-	}
-.MainHeadText {
-	font-weight: 700;
-	font-size: var(--xlarge-text);
-}
+/* text styles */
 .HeadText {
 	font-weight: 700;
 	font-size: var(--large-text);
 }
 .SubHeadText {
-	font-weight: 400;
-	font-size: var(--med-text);
-	overflow: hidden;
-	overflow-wrap: break-word;
-}
-
-.BoldText {
 	font-weight: 700;
+	font-size: var(--medium-text);
 }
-.GreyText {
-	color: var(--grey-color);
-}
-.BlackText {
-	color: var(--dark-color);
-}
-.YellowText {
-	color: var(--primary-color);
-}
-.WhiteText {
+.SplitText {
+	display: flex;
 	color: var(--white-color);
+	font-size: var(--medium-text);
 }
+	.SplitText hr {
+		width: 100%;
+		color: var(--white-color);
+	}
+	.SplitText h1 {
+		margin: 0 0.5em 0 0.5em;
+		font-weight: 700;
+	}

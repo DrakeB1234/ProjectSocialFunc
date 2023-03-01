@@ -1,63 +1,66 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../navbar/navbar.module.css';
 import React, { useState } from 'react';
+
+import styles from './navbar.module.css';
 
 export default function Navbar() {
 
-    const [navBarOpen, setNavBarOpen] = useState('CollapseHeightClosed')
-    const toggleNavBar = () => {
-        if(navBarOpen === 'CollapseHeightClosed'){
-            setNavBarOpen('CollapseHeightOpen')
-            return
-        }
-        setNavBarOpen('CollapseHeightClosed')
-    }
+  const [mobileNav, setMobileNav ] = useState(false)
 
-    return (
-        <>
-            <div className={'FlexCol ' + styles.MobileNavContainer}>
-                <img onClick={toggleNavBar} src='/icons/icon-bars.svg'></img>
-            </div>
-            <div onClick={toggleNavBar} className={`FlexCol ${navBarOpen} ` + styles.MobileNavContent}>
-                <img src='/icons/icon-x.svg'></img>
-                <Link href='/'>
-                    Home
-                </Link>
-                <Link href='/games'>
-                    Games
-                </Link>
-                <Link href='/play'>
-                    Play
-                </Link>
-                <Link href='/updates'>
-                    Updates
-                </Link>
-                <Link href='/about'>
-                    About
-                </Link>
-            </div>
-            <Link href='/'>
-            <div className={'FlexRow ' + styles.BannerContainer}>
-                <img src='/appbanner-socialfunc.png'/>
-            </div>
-            </Link>
-            <div className={`FlexRow ` + styles.DesktopNavContainer}>
-                <Link href='/'>
-                    Home
-                </Link>
-                <Link href='/games'>
-                    Games
-                </Link>
-                <Link href='/play'>
-                    Play
-                </Link>
-                <Link href='/updates'>
-                    Updates
-                </Link>
-                <Link href='/about'>
-                    About
-                </Link>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <nav className={'FlexRow ' + styles.DesktopNavContainer}>
+        <Link href='/'>
+          <Image
+            src="/favicon.png"
+            alt='game banner'
+            height={900}
+            width={1600}
+            quality={100}
+          />
+        </Link>
+        <div className='FlexRowCenter'>
+          <Link href='/' className='SubHeadText'>Home</Link>
+          <Link href='/games' className='SubHeadText'>Games</Link>
+          <Link href='/play' className='SubHeadText'>Join</Link>
+          <Link href='/about' className='SubHeadText'>About us</Link>
+        </div>
+      </nav>
+
+      <nav className={'FlexRow ' + styles.MobileNavContainer}>
+        <Link href='/'>
+          <Image
+            src="/favicon.png"
+            alt='game banner'
+            height={900}
+            width={1600}
+            quality={100}
+          />
+        </Link>
+        <Image
+        onClick={() => {
+          setMobileNav(!mobileNav);
+        }}
+          src="/icons/icon-bars.svg"
+          alt='game banner'
+          height={100}
+          width={100}
+          quality={100}
+          />
+      </nav>
+      <div className={
+          mobileNav ? styles.MobileNavPopup + ' ' + styles.MobileNavShow: styles.MobileNavPopup + ' ' + styles.MobileNavHide
+      }>
+        <div className='FlexCol' onClick={() => {
+          setMobileNav(!mobileNav);
+        }}>
+          <Link href='/' className='SubHeadText'>Home</Link>
+          <Link href='/games' className='SubHeadText'>Games</Link>
+          <Link href='/play' className='SubHeadText'>Join</Link>
+          <Link href='/about' className='SubHeadText'>About us</Link>
+        </div>
+      </div>
+    </>
+  )
 }
