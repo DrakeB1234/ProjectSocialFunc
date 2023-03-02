@@ -58,8 +58,10 @@ a {
 :root {
 	--primary-color: #FED261;
 	--primaryli-color: #FFE5A4;
+	--darker-color: #38342d;
 	--dark-color: #413D34;
 	--grey-color: #4f555d;
+	--greyli-color: #646a73;
 	--white-color: #fcfcfc;
 
 	--small-text: 1rem;
@@ -71,13 +73,12 @@ a {
 
 /* DOM tags */
 #__next {
-	min-height: 100vh;
-	background-color: var(--primaryli-color);
-	background-image: url('/applogo-socialfunc.png');
+	background-color: var(--dark-color);
 	overflow: hidden;
 }
 
 main {
+	margin-bottom: 4em;
 	background-color: var(--dark-color);
 }
 
@@ -110,16 +111,26 @@ main {
 	font-weight: 700;
 	font-size: var(--medium-text);
 }
+
+.UnderLineText {
+	border-bottom: 1px solid var(--white-color);
+}
+
+.WhiteText {
+	color: var(--white-color);
+}
+.YellowText {
+	color: var(--primary-color);
+}
+
 .SplitText {
 	display: flex;
+	margin: 0 10% 0 10%;
 	color: var(--white-color);
+	font-weight: 700;
 	font-size: var(--medium-text);
 }
 	.SplitText hr {
 		width: 100%;
 		color: var(--white-color);
-	}
-	.SplitText h1 {
-		margin: 0 0.5em 0 0.5em;
-		font-weight: 700;
 	}

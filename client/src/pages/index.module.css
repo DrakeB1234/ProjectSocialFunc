@@ -5,7 +5,7 @@
 }
     .BannerContainer > img {
         height: 50%;
-        width: clamp(var(--min-screen-width), 100%, 600px);
+        width: clamp(var(--min-screen-width), 100%, 400px);
     }
 /* Game Slider Container */
 .GameSliderContainer {
@@ -13,16 +13,42 @@
 }
 /* Join Game Container */
 .JoinContainer {
-    text-align: center;
     margin-top: 1em;
     padding: 1em;
+    text-align: center;
     color: var(--white-color);
+    background-color: var(--grey-color);
+}
+/* Subtitle container */
+.SubTitle {
+    margin-top: 2em;
+    padding: 1em;
+    padding-left: 10%;
+    color: var(--white-color);
+    border-bottom: 1px solid var(--white-color);
 }
 /* About Us Container */
 .AboutUsContainer {
     width: clamp(var(--min-screen-width), 100%, 1400px);
     margin: 0 auto 0 auto;
-    margin-top: 4em;
-    padding: 1em;
+    margin-top: 2em;
     color: var(--white-color);
 }
+    /* About Us first Container */
+    .AboutUsContainer > div {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    /* image */
+    .AboutUsContainer img {
+        height: 18em;
+        width: clamp(var(--min-screen-width), 96%, 500px);
+        object-fit: fill;
+    }
+    /* text */
+    .AboutUsContainer p {
+        align-self: flex-start;
+        padding: 1em;
+        width: clamp(var(--min-screen-width), 96%, 500px);
+        font-size: var(--med-text);
+    }

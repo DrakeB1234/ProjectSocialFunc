@@ -1,0 +1,36 @@
+/* game container */
+.GameContainerList {
+    margin: 6em auto 0 auto;
+    width: clamp(var(--min-screen-width), 100%, 1400px);
+    flex-wrap: wrap;
+    gap: 1em 8em;
+}
+/* game container item (image banner)*/
+.GameItem {
+    width: clamp(var(--min-screen-width), 100%, 500px);
+    background-color: var(--grey-color);
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+    /* hover game item */
+    .GameItem:hover {
+        background-color: var(--greyli-color);
+        transition: all 0.2s ease-in-out;
+    }
+    .GameItem img {
+        height: 15em;
+        width: clamp(var(--min-screen-width), 100%, 500px);
+        object-fit: cover;
+    }
+    /* text container */
+    .GameItem div {
+        width: 100%;
+        padding: 2em;
+    }
+        .GameItem div h1 {
+            margin: 0 1em 0 1em;
+            color: var(--white-color);
+        }
+        .GameItem div h1:last-child {
+            margin-left: 2em;
+        }

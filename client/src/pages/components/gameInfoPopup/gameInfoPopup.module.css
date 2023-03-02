@@ -1,0 +1,95 @@
+/* game info parent */
+.GameInfoParent {
+    justify-content: flex-start;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(34, 35, 37, 0.8);
+    z-index: 93;
+}
+/* game info container */
+.GameInfoContainer {
+    width: clamp(var(--min-screen-width), 100%, 800px);
+    color: var(--white-color);
+    background-color: var(--grey-color);
+    z-index: 93;
+    overflow-y: scroll;
+}
+    /* game title */
+    .GameInfoTitle {
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        padding-top: 2em;
+        cursor: pointer;
+    }
+        .GameInfoTitle > img {
+            height: 30px;
+            width: 30px;
+        }
+    .GameInfoContainer > img {
+        height: 28em;
+        width: 100%;
+    }
+    /* tag container */
+    .GameInfoTags {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1em;
+        padding: 1em;
+    }
+        .GameInfoTags > h1 {
+            padding: 0.5em 1em 0.5em 1em;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--white-color);
+            background-color: var(--greyli-color);
+        }
+    /* host button container */
+    .GameInfoButton {
+        padding: 1em;
+        background-color: var(--greyli-color);
+    } 
+        .GameInfoButton a {
+            flex: 1;
+            margin: 0 6% 0 6%;
+            padding: 1em;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        } 
+            /* host button */
+            .GameInfoButton a:first-child {
+                flex: 1;
+                margin: 0 6% 0 6%;
+                padding: 1em;
+                border-radius: 5px;
+                text-align: center;
+                background-color: #5e9654;
+                cursor: pointer;
+            } 
+            /* join button */
+            .GameInfoButton a:last-child {
+                flex: 1;
+                margin: 0 6% 0 6%;
+                padding: 1em;
+                border-radius: 5px;
+                text-align: center;
+                background-color: #789bc3;
+                cursor: pointer;
+            } 
+    /* game info text */
+    .GameInfoText {
+        padding: 2em;
+    } 
+        /* sub headers */
+        .GameInfoText > h1 {
+            font-size: var(--med-text);
+            padding: 0.5em 0 0.5em 0;
+            margin-bottom: 1em;
+            border-bottom: 1px solid var(--white-color);
+        } 
+        /* sub headers (not first one) */
+        .GameInfoText > h1:nth-child(n + 2) {
+            padding-top: 3em;
+        } 

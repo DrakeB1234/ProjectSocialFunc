@@ -1,0 +1,43 @@
+/* footer container */
+.FooterContainer {
+    padding-top: 6em;
+    background-color: var(--darker-color);
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+}
+/* footer wrap */
+.FooterWrap {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em 8em;
+    width: 96%;
+    padding: 1em;
+    padding-bottom: 4em;
+}
+    /* footer wrap item */
+    .FooterWrap .FooterItem {
+        gap: 0.5em;
+        width: 450px;
+        padding: 1em;
+        color: var(--white-color);
+    }
+        /* footer wrap item link */
+        .FooterWrap .FooterItem div {
+            gap: 1em;
+            margin-top: 1em;
+        }
+        /* footer wrap item link */
+        .FooterWrap .FooterItem a {
+            padding-top: 0.5em;
+        }
+/* footer bottom item */
+.FooterContainer > .FooterItem {
+    gap: 0.5em;
+    width: 100%;
+    padding: 2em;
+    color: var(--white-color);
+}
+    /* footer bottom item */
+    .FooterContainer > .FooterItem a {
+        gap: 0.5em;
+        color: #3365fb;
+    }

@@ -7,7 +7,7 @@
     right: 0;
     padding: 0.5em;
     background-color: var(--dark-color);
-    z-index: 99;
+    z-index: 91;
 }
     .DesktopNavContainer img {
         height: 45px;
@@ -32,7 +32,7 @@
     right: 0;
     padding: 0.3em;
     background-color: var(--dark-color);
-    z-index: 99;
+    z-index: 91;
 }
     .MobileNavContainer a img {
         height: 40px;
@@ -50,7 +50,7 @@
     position: fixed;
     inset: 0;
     overflow-y: scroll;
-    z-index: 99;
+    z-index: 90;
 }
 .MobileNavHide {
     width: 0;
@@ -60,14 +60,14 @@
     width: 100%;
     transition: all 0.3s ease-in-out;
 }
-    .MobileNavPopup div {
+    .MobileNavPopup > div {
         gap: 2em;
-        height: 100%;
+        height: 86vh;
         padding: 2em;
         padding-top: 6em;
         background-color: var(--dark-color);
     }
-    .MobileNavPopup div a {
+    .MobileNavPopup > div > a {
         font-size: var(--large-text);
         color: var(--primary-color);
     }

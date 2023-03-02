@@ -1,28 +1,46 @@
+/* game container */
 .GameContainer {
     width: 100%;
-    margin-top: 1px;
-    margin-bottom: 5em;
 }
-    /* arrow icons */
-    .GameContainer > img:first-child {
-        height: 300px;
-        padding-right: 0.3em;
-        cursor: pointer;
+/* game image */
+.GameImage {
+    padding-bottom: 3em;
+    transition: background-color 1s ease-in-out;
+}
+    .GameImage a {
+        display: flex;
+        justify-content: center;
     }
-    .GameContainer > img:last-child {
-        height: 300px;
-        padding-left: 0.3em;
-        cursor: pointer;
+    .GameImage a img {
+        height: 100%;
+        max-height: 300px;
+        width: 96%;
     }
-.GameItem a img {
-    height: 100%;
-    max-height: 450px;
+    /* animation for slides */
+    .SlideHide {
+        opacity: 0;
+    }
+    .SlideShow {
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+    }
+/* arrow container */
+.ArrowContainer {
+    position: relative;
+    justify-content: space-around;
+    bottom: 4.8em;
+    padding: 1.5em 0 1.5em 0;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
-    .GameItem h1 {
-        position: relative;
-        bottom: 10px;
-        padding: 0.5em;
+    .ArrowContainer h1 {
+        text-align: center;
         color: var(--white-color);
-        background-color: var(--grey-color);
+        overflow-wrap: break-word;
+    } 
+    .ArrowContainer img:first-child {
+        cursor: pointer;
+    } 
+    .ArrowContainer img:last-child {
+        cursor: pointer;
     }

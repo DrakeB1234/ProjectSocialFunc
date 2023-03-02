@@ -1,0 +1,40 @@
+.FoundContainer {
+    height: 100vh;
+    background-image: url('/applogo-socialfunc.png');
+    background-color: var(--primaryli-color);
+}
+    .FoundContent {
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .FoundContent > div {
+        justify-content: flex-start;
+        gap: 1em;
+        height: 100%;
+        width: 100%;
+        padding-top: 10em;
+        color: var(--white-color);
+        background-color: rgba(56, 63, 67, 0.6);
+        text-align: center;
+    }
+    /* 404 */
+    .FoundContent > div > h1:first-child {
+        font-size: 10rem;
+    }
+    /* website */
+    .FoundContent > div > h2 {
+        font-size: 1.5rem;
+    }
+    /* text */
+    .FoundContent > div > h1:last-child {
+        font-size: 3rem;
+    }
+    /* link */
+    .FoundContent > div > a {
+        margin: auto 0 20% 0;
+        padding: 0.5em 3em 0.5em 3em;
+        border-radius: 20px;
+        text-align: center;
+        color: var(--white-color);
+        background-color: var(--greyli-color);
+    }

@@ -50,7 +50,7 @@ export default function Navbar() {
           />
       </nav>
       <div className={
-          mobileNav ? styles.MobileNavPopup + ' ' + styles.MobileNavShow: styles.MobileNavPopup + ' ' + styles.MobileNavHide
+          mobileNav ? styles.MobileNavPopup + ' ' + styles.MobileNavShow : styles.MobileNavPopup + ' ' + styles.MobileNavHide
       }>
         <div className='FlexCol' onClick={() => {
           setMobileNav(!mobileNav);
