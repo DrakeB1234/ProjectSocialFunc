@@ -20,6 +20,11 @@
         padding: 1em;
         color: var(--white-color);
     }
+        /* footer item header */
+        .FooterWrap .FooterItem > h1:first-child {
+            margin-bottom: 0.2em;
+            padding-bottom: 0.5em;
+        }
         /* footer wrap item link */
         .FooterWrap .FooterItem div {
             gap: 1em;

@@ -54,11 +54,11 @@
 }
 .MobileNavHide {
     width: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .MobileNavShow {
     width: 100%;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
     .MobileNavPopup > div {
         gap: 2em;

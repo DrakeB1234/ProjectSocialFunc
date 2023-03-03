@@ -13,12 +13,16 @@
 }
 /* Join Game Container */
 .JoinContainer {
-    margin-top: 1em;
-    padding: 1em;
-    text-align: center;
-    color: var(--white-color);
-    background-color: var(--grey-color);
+    width: 100%;
 }
+    .JoinContainer a {
+        margin-top: 1em;
+        padding: 0.5em 2em 0.5em 2em;
+        border-radius: 10px;
+        text-align: center;
+        color: var(--white-color);
+        background-color: var(--grey-color);
+    }
 /* Subtitle container */
 .SubTitle {
     margin-top: 2em;
@@ -37,11 +41,12 @@
     /* About Us first Container */
     .AboutUsContainer > div {
         flex-wrap: wrap;
+        gap: 3em 0;
         width: 100%;
     }
     /* image */
     .AboutUsContainer img {
-        height: 18em;
+        height: 16em;
         width: clamp(var(--min-screen-width), 96%, 500px);
         object-fit: fill;
     }

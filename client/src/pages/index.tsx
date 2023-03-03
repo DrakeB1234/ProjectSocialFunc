@@ -30,7 +30,7 @@ export default function Landing() {
           <Carousel />
         </div>
         <h1 className='SplitText'><hr></hr>&nbsp;OR&nbsp;<hr></hr></h1>
-        <div className={'FlexCol ' + styles.JoinContainer}>
+        <div className={'FlexColCenter ' + styles.JoinContainer}>
           <Link href='/play' className='HeadText'>Join Game</Link>
         </div>
         <h1 className={'HeadText '  + styles.SubTitle }>About us</h1>
@@ -43,8 +43,8 @@ export default function Landing() {
               width={1000}
               quality={100}
             />
-            <p>&emsp;Socialfunc is a web platform aimed at groups of family and friends to get together and play some fun and interactable games!
-              This is (at the moment...) a project with just one developer, mainly just trying to utilize new technologies in a fasnicating and real world
+            <p>&emsp;Socialfunc is a web platform aimed at groups of family and friends to get together and play some fun and interactable games!<br></br>
+              &emsp;This is (at the moment...) a project with just one developer, mainly just trying to utilize new technologies in a fasnicating and real world
               fashion. However, I still plan on providing fun social experiences that some may find enertaining for their guests, and if so than that is
               great! 
             </p>
