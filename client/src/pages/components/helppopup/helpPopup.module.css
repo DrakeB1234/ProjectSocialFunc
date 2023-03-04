@@ -1,0 +1,68 @@
+/* help info parent */
+.HelpParent {
+    justify-content: flex-start;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(34, 35, 37, 0.8);
+    z-index: 93;
+}
+/* game button container (main menu) */
+.HelpButtonContainer {
+    gap: 0.1em;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: clamp(var(--min-screen-width), 100%, 800px);
+    background-color: var(--greyli-color);
+    overflow-y: scroll;
+}
+    /* close menu container */
+    .HelpExitContainer {
+        width: 100%;
+        cursor: pointer;
+    }
+        .HelpExitContainer > h1 {
+            padding: 1em;
+            color: var(--white-color);
+        }
+        .HelpExitContainer > img {
+            position: absolute;
+            right: 1em;
+            height: 30px;
+            width: 30px;
+        }
+    .HelpButtonContainer > button {
+        width: 100%;
+        padding: 1.5em;
+        border: 0;
+        font-weight: 700;
+        font-size: var(--med-text);
+        color: var(--darker-color);
+        background-color: var(--white-color);
+        cursor: pointer;
+    }
+/* game info container */
+.HelpInfoContainer {
+    position: absolute;
+    justify-content: flex-start;
+    height: 100%;
+    width: clamp(var(--min-screen-width), 100%, 800px);
+    color: var(--white-color);
+    background-color: var(--greyli-color);
+    z-index: 93;
+    overflow-y: scroll;
+}
+    /* headers */
+    .HelpInfoContainer > h1 {
+        margin: 1em;
+        font-weight: 700;
+        font-size: var(--med-text);
+    }
+    /* text */
+    .HelpInfoContainer > p {
+        margin: 1em;
+        font-size: var(--med-text);
+    }
+        .HelpInfoContainer > p > span {
+            margin-left: 1em;
+        }

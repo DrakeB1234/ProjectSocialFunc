@@ -109,7 +109,7 @@ main {
 }
 .SubHeadText {
 	font-weight: 700;
-	font-size: var(--medium-text);
+	font-size: var(--med-text);
 }
 
 .UnderLineText {

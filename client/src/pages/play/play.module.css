@@ -1,0 +1,62 @@
+/* play container */
+.PlayContainer {
+    position: relative;
+    top: 2em;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    height: 100vh;
+    background-image: url('/applogo-socialfunc.png');
+    background-color: var(--primaryli-color);
+    overflow-y: scroll;
+}
+/* join container */
+.JoinContainer {
+    width: clamp(var(--min-screen-width), 100%, 600px);
+    padding: 2em;
+    margin-top: 5em;
+}
+    .JoinContainer form {
+        width: 85%;
+        padding: 2em;
+        background-color: rgb(29, 31, 35, 0.7);
+    }
+    .JoinContainer h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: var(--med-text);
+        color: var(--white-color);
+    }
+    .JoinContainer label {
+        margin: 0.5em 0 0.5em 0;
+        font-weight: 700;
+        font-size: var(--med-text);
+        color: var(--white-color);
+    }
+    .JoinContainer input {
+        padding: 0.5em;
+        border-radius: 10px;
+        border: 0;
+        font-size: var(--med-text);
+        font-weight: 700;
+        text-align: center;
+    }
+    .JoinContainer button {
+        margin: 1em 0 1em 0;
+        padding: 0.5em;
+        border-radius: 10px;
+        border: 0;
+        font-size: var(--med-text);
+        font-weight: 700;
+        background-color: var(--primary-color);
+        cursor: pointer;
+    }
+        /* join button */
+        .JoinContainer button[name='join'] {
+            margin-top: 3em;
+        }
+        /* help button */
+        .JoinContainer button[name='help'] {
+            margin-top: 4em;
+            color: var(--white-color);
+            background-color: #6489ee;
+        }
