@@ -8,12 +8,11 @@
 }
 /* game button container (main menu) */
 .HelpButtonContainer {
-    gap: 0.1em;
     align-items: center;
     position: absolute;
     height: 100%;
     width: clamp(var(--min-screen-width), 100%, 800px);
-    background-color: var(--greyli-color);
+    background-color: var(--white-color);
     overflow-y: scroll;
 }
     /* close menu container */
@@ -23,7 +22,6 @@
     }
         .HelpExitContainer > h1 {
             padding: 1em;
-            color: var(--white-color);
         }
         .HelpExitContainer > img {
             position: absolute;
@@ -35,9 +33,10 @@
         width: 100%;
         padding: 1.5em;
         border: 0;
+        border-bottom: 1px solid var(--greyli-color);
         font-weight: 700;
         font-size: var(--med-text);
-        color: var(--darker-color);
+        color: var(--greyli-color);
         background-color: var(--white-color);
         cursor: pointer;
     }
@@ -47,8 +46,8 @@
     justify-content: flex-start;
     height: 100%;
     width: clamp(var(--min-screen-width), 100%, 800px);
-    color: var(--white-color);
-    background-color: var(--greyli-color);
+    color: var(--darker-color);
+    background-color: var(--white-color);
     z-index: 93;
     overflow-y: scroll;
 }

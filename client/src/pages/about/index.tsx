@@ -15,36 +15,6 @@ export default function About() {
       </Head>
       <Navbar />
       <main className={'FlexColCenter ' + styles.AboutContainer}>
-        <h1 className='HeadText'>Updates</h1>
-        <div className={'FlexColCenter ' + styles.UpdatesContainer}>
-            <div className='FlexCol'>
-                <h1>Project Start!</h1>
-                <h2>02/10/2023</h2>
-                <p><span>This</span> would be the content that will be displayed in the updates container.
-                would be the content that will be displayed in the updates container.
-                would be the content that will be displayed in the updates container.
-                would be the content that will be displayed in the updates container.
-                </p>
-            </div>
-            <div className='FlexCol'>
-                <h1>Project Start!</h1>
-                <h2>02/10/2023</h2>
-                <p><span>This</span> would be the content that will be displayed in the updates container.
-                would be the content that will be displayed in the updates container.
-                would be the content that will be displayed in the updates container.
-                would be the content that will be displayed in the updates container.
-                </p>
-            </div>
-            <div className='FlexCol'>
-                <h1>Project Start!</h1>
-                <h2>02/10/2023</h2>
-                <p><span>This</span> would be the content that will be displayed in the updates container.
-                would be the content that will be displayed in the updates container.
-                would be the content that will be displayed in the updates container.
-                would be the content that will be displayed in the updates container.
-                </p>
-            </div>
-        </div>
         <h1 className='HeadText'>About us</h1>
         <div className={'FlexColCenter ' + styles.AboutUsContainer}>
             <p>&emsp;Socialfunc is a web platform aimed at groups of family and friends to get together and play some fun and interactable games!
@@ -53,6 +23,7 @@ export default function About() {
                 great! 
             </p>
         </div>
+        <Link href='/updates' className='SubHeadText'>View Developer Updates Here!</Link>
         <h1 className='HeadText'>Support</h1>
         <div className={'FlexColCenter ' + styles.AboutUsContainer}>
             <p>&emsp;If you notice any issues while using the services on this site, please report them through email or through issue requests at our github

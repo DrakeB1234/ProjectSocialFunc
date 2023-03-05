@@ -54,6 +54,7 @@ export default function Landing() {
             listed in the &quot;About us&quot; page.
             </p>
           </div>
+          <Link href='/updates' className='SubHeadText'>View Developer Updates Here!</Link>
         </div>
       </main>
       <Footer />

@@ -1,0 +1,44 @@
+/* updates parent */
+.UpdatesParent {
+    align-items: center;
+    min-height: 46vh;
+}
+/* updates container */
+.UpdatesContainer {
+    gap: 0.1em;
+    margin: 4em 0 1em 0;
+    width: clamp(var(--min-screen-width), 82%, 600px);
+}
+    /* updates headers */
+    .UpdatesContainer > h1 {
+        padding: 1em;
+        text-align: center;
+        font-size: var(--large-text);
+        font-weight: 700;
+        color: var(--white-color);
+    }
+    /* updates content */
+    .UpdatesContainer > div {
+        width: 100%;
+        padding: 2em;
+        color: var(--white-color);
+        background-color: var(--greyli-color);
+    }
+        /* title */
+        .UpdatesContainer > div > h1 {
+            font-size: var(--med-text);
+            font-weight: 700;
+        }
+        /* date */
+        .UpdatesContainer > div > h2 {
+            margin: 1em 0 2em 0;
+            font-size: var(--small-text);
+            color: var(--darker-color);
+        }
+        /* content */
+        .UpdatesContainer > div > p {
+            font-size: var(--small-text);
+        }
+            .UpdatesContainer > div > p span {
+                margin-left: 0.5em;
+            }
